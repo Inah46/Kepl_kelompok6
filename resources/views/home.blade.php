@@ -30,13 +30,16 @@
                                     </td>
                                  </tr>
                         </form>
+
                     <!-- </table> -->
+
                 </div>
             </div>
         </div>
     </div>
 
     <br>
+
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -68,7 +71,8 @@
                                 </tr>
                             @empty
                             <tr>
-                                <td><b><i>TIDAK ADA DATA UNTUK DITAMPILKAN</i></b></td>
+                                <!-- <td><b><i>TIDAK ADA DATA UNTUK DITAMPILKAN</i></b></td> -->
+                                <td colsplan ="4"><b><i>TIDAK ADA DATA UNTUK DITAMPILKAN</i></b></td>
                             </tr>
                             @endforelse
                         </tbody>
