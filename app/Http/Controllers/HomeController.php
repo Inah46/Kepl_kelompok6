@@ -48,8 +48,7 @@ class HomeController extends Controller
             // ]);
 
             // return redirect()->back();
-        }
-        elseif (isset($request->btnOut)){
+        }else if(isset($request->btnOut)){
             $absen->where(['date' => $date, 'user_id' => $user_id])
                     ->update([
                         'time_out' => $time,
@@ -58,6 +57,6 @@ class HomeController extends Controller
 
             return redirect()->back();
         }
-        return $request->all(); 
+        return $request->all();
     }
 }

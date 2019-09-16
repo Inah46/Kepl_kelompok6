@@ -22,3 +22,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/absen', 'HomeController@absen')->name('absen');
+
+
+// Dosen
+Route::get('/dosen/login', 'DosenController@dosenLogin')->name('loginDosen');
+Route::post('/dosen/doLogin','DosenController@doLogin')->name('doLoginDosen');
+
+//Admin
+Route::get('/admin/login', 'AdminController@adminLogin')->name('loginAdmin');
+Route::post('/admin/doLogin','AdminController@doLogin')->name('doLogin');
+Route::get('/admin/dashboard', 'AdminController@dashboard')->name('dashboardAdmin');
