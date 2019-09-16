@@ -762,6 +762,7 @@
                 "storage"
             ],
             "time": "2019-08-24T11:17:19+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "milon/barcode",
@@ -822,6 +823,8 @@
                 "qrcode"
             ],
             "time": "2019-09-09T12:23:03+00:00"
+=======
+>>>>>>> layout qrcode
         },
         {
             "name": "monolog/monolog",

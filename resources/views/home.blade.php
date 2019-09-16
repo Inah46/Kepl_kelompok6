@@ -9,11 +9,12 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
+<<<<<<< HEAD
                     <!-- <table class="tabletable-responsive"> -->
                          <form action="{{ route('absen') }}" method="post" role="form">
                              {{ csrf_field() }}
@@ -23,12 +24,22 @@
                                     </td>
                                     <td>
                                       <br>
+=======
+                    <table class="tabletable-responsive">
+                        <form action="/absen" method="post">
+                            {{csrf_field()}}
+                            <tr>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Keterangan.." name="note">
+                                </td>
+                                <td>
+>>>>>>> layout qrcode
                                     <button type="submit" class="btn btn-flat btn-primary" name="btnIn">ABSEN MASUK</button>
-                                    </td>
-                                    <td>
+                                </td>
+                                <td>
                                     <button type="submit" class="btn btn-flat btn-primary" name="btnOut">ABSEN KELUAR</button>
-                                    </td>
-                                 </tr>
+                                </td>
+                            </tr>
                         </form>
 
                     <!-- </table> -->
@@ -47,9 +58,9 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     <table class="table table-responsive table-bordered table-hover">
@@ -62,7 +73,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse($data_absen as $absen)
+                            <!-- @forelse($data_absen as $absen)
                                 <tr>
                                     <td>{{$absen->date}}</td>
                                     <td>{{$absen->time_in}}</td>
@@ -75,6 +86,7 @@
                                 <td colsplan ="4"><b><i>TIDAK ADA DATA UNTUK DITAMPILKAN</i></b></td>
                             </tr>
                             @endforelse
+-->
                         </tbody>
                     </table>
                     {!! $data_absen->links() !!}
