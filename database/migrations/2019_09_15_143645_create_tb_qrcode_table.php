@@ -17,8 +17,8 @@ class CreateTbQrcodeTable extends Migration
             $table->string('kd_qr')->primary();
             $table->string('kd_mk')->index();
             $table->foreign('kd_mk')->references('kd_mk')->on('tb_matkul');
-            $table->string('nim')->index();
-            $table->foreign('nim')->references('nim')->on('tb_mahasiswa');
+            // $table->string('nim')->index();
+            // $table->foreign('nim')->references('nim')->on('tb_mahasiswa');
             $table->date('date');
             $table->timestamps();
         });

@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard | Admin SinSen</title>
+    <title>Dashboard | Dosen SinSen</title>
 
     <link rel="apple-touch-icon" href="/images/icon.png">
     <link rel="shortcut icon" href="/images/icon.png">
@@ -73,14 +73,20 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="{{ route('dashboardAdmin') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                        <a href="{{ route('dashboardDosen') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Data</li><!-- /.menu-title -->
                     <li>
-                        <a href="{{ route('dataDosen') }}"><i class="menu-icon fa fa-user"></i>Data Dosen </a>
+                        <a href="#"><i class="menu-icon fa fa-user"></i>Data Presensi </a>
                     </li>
                     <li>
-                        <a href="{{ route('dataMahasiswa') }}"><i class="menu-icon fa fa-user"></i>Data Mahasiswa </a>
+                        <a href="{{ route('datamhs') }}"><i class="menu-icon fa fa-user"></i>Data Mahasiswa </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('datamk') }}"><i class="menu-icon fa fa-user"></i>Data Mata Kuliah </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('dataqr') }}"><i class="menu-icon fa fa-user"></i>Data QR Code </a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -157,23 +163,6 @@
             <div class="animated fadeIn">
                 <!-- Widgets  -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-five">
-                                    <div class="stat-icon dib flat-color-2">
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">{{ $dosen }}</span></div>
-                                            <div class="stat-heading">Dosen</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="card">

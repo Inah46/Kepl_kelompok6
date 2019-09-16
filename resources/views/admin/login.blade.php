@@ -39,7 +39,7 @@
         <form id="formLogin" class="login100-form validate-form" method="POST">
           {{ csrf_field() }}
           <span class="login100-form-title p-b-26">
-            SinSen
+            Admin | SinSen
           </span>
           <!-- <span class="login100-form-title p-b-48">
             <img src="images/icon.png" width="80" height="80">
