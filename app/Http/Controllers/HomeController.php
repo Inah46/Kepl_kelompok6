@@ -36,18 +36,18 @@ class HomeController extends Controller
         $time = date("H-i-s");
         $note = $request->note;
 
-        $absen = new absen;
+        $absen = new Absen;
 
         if(isset($request->btnIn)){
-            return "absen masuk";
-            // $absen->create([
-            //     'user_id' => $user_id,
-            //     'date' => $date,
-            //     'time_in' => $time,
-            //     'note' => $note
-            // ]);
+            // return "absen masuk";
+            $absen->create([
+                'user_id' => $user_id,
+                'date' => $date,
+                'time_in' => $time,
+                'note' => $note
+            ]);
 
-            // return redirect()->back();
+            return redirect()->back();
         }
         elseif (isset($request->btnOut)){
             $absen->where(['date' => $date, 'user_id' => $user_id])
