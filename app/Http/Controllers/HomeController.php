@@ -58,6 +58,6 @@ class HomeController extends Controller
 
             return redirect()->back();
         }
-        return $request->all(); 
+        return $request->all();
     }
 }
