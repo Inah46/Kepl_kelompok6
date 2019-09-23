@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/absen', 'HomeController@absen')->name('absen');
-<<<<<<< HEAD
+
 
 
 // Dosen
@@ -50,5 +50,3 @@ Route::post('/admin/deleteDosen', 'AdminController@deleteDosen')->name('deleteDo
 Route::get('/admin/data_mahasiswa', 'AdminController@dataMahasiswa')->name('dataMahasiswa');
 Route::post('/admin/addMahasiswa', 'AdminController@addMahasiswa')->name('addMahasiswa');
 Route::post('/admin/deleteMahasiswa', 'AdminController@deleteMahasiswa')->name('deleteMahasiswa');
-=======
->>>>>>> layout qrcode
