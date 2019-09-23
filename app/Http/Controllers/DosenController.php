@@ -39,8 +39,11 @@ class DosenController extends Controller
 
     public function dashboard(Request $request){
         $mhs   = Mahasiswa::count();
+        $nip   = $request->session()->get('nip');
 
-        return view('dosen.dashboard', compact('mhs'));
+        $namaDosen = DB::table('tb_dosen')->where('nip', $nip)->value('nama');
+
+        return view('dosen.dashboard', compact('mhs', 'namaDosen'));
     }
 
     public function dataMahasiswa(Request $request){

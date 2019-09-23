@@ -37,8 +37,9 @@ class AdminController extends Controller
     public function dashboard(Request $request){
         $dosen = Dosen::count();
         $mhs   = Mahasiswa::count();
+        $username = $request->session()->get('username');
 
-        return view('admin.dashboard', compact('dosen', 'mhs'));
+        return view('admin.dashboard', compact('dosen', 'mhs', 'username'));
     }
 
     //dosen

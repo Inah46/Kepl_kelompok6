@@ -77,9 +77,9 @@
                         <a href="{{ route('dashboardDosen') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Data</li><!-- /.menu-title -->
-                    <li>
+                    <!-- <li>
                         <a href="#"><i class="menu-icon fa fa-user"></i>Data Presensi </a>
-                    </li>
+                    </li> -->
                     <li class="active">
                         <a href="{{ route('datamhs') }}"><i class="menu-icon fa fa-user"></i>Data Mahasiswa </a>
                     </li>

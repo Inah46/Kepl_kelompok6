@@ -76,9 +76,9 @@
                         <a href="{{ route('dashboardDosen') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Data</li><!-- /.menu-title -->
-                    <li>
+                    <!-- <li>
                         <a href="#"><i class="menu-icon fa fa-user"></i>Data Presensi </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="{{ route('datamhs') }}"><i class="menu-icon fa fa-user"></i>Data Mahasiswa </a>
                     </li>
@@ -143,7 +143,7 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href=""><i class="fa fa- user"></i>> Hello, #</a>
+                            <a class="nav-link" href=""><i class="fa fa- user"></i>> Hello, {{ $namaDosen }}</a>
 
                             <!-- <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">3</span></a> -->
 
@@ -164,7 +164,7 @@
                 <!-- Widgets  -->
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-12 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <div class="stat-widget-five">
