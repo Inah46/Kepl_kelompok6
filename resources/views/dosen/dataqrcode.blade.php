@@ -216,7 +216,11 @@
                                         @foreach($qr as $key => $data)
                                         <tr>
                                             <td>{{ ++$key }}</td>
+<<<<<<< HEAD
                                             <td>{{ $data->kd_qr }}</td>
+=======
+                                            <td>{!! DNS2D::getBarcodeHTML($data->kd_qr, 'QRCODE',3,3) !!}</td>
+>>>>>>> generate code2
                                             <td>{{ $data->kd_mk }}</td>
                                             <td>{{ $data->date }}</td>
                                             <td>
