@@ -34,6 +34,12 @@ class AdminController extends Controller
           ], 200);
         }
     }
+
+    public function logout(Request $request){
+      $request->session()->forget('username');
+      return redirect()->route('loginAdmin');
+    }
+
     public function dashboard(Request $request){
         $dosen = Dosen::count();
         $mhs   = Mahasiswa::count();

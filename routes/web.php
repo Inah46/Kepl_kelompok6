@@ -28,6 +28,7 @@ Route::post('/absen', 'HomeController@absen')->name('absen');
 // Dosen
 Route::get('/dosen/login', 'DosenController@dosenLogin')->name('loginDosen');
 Route::post('/dosen/doLogin','DosenController@doLogin')->name('doLoginDosen');
+Route::get('/dosen/logout', 'DosenController@logout')->name('logoutDosen');
 Route::get('/dosen/dashboard', 'DosenController@dashboard')->name('dashboardDosen');
 Route::get('/dosen/data_mahasiswa', 'DosenController@dataMahasiswa')->name('datamhs');
 
@@ -42,6 +43,7 @@ Route::post('/dosen/deleteQrCode', 'DosenController@deleteQrCode')->name('delete
 //Admin
 Route::get('/admin/login', 'AdminController@adminLogin')->name('loginAdmin');
 Route::post('/admin/doLogin','AdminController@doLogin')->name('doLogin');
+Route::get('/admin/logout', 'AdminController@logout')->name('logoutAdmin');
 Route::get('/admin/dashboard', 'AdminController@dashboard')->name('dashboardAdmin');
 Route::get('/admin/data_dosen', 'AdminController@dataDosen')->name('dataDosen');
 Route::post('/admin/addDosen', 'AdminController@addDosen')->name('addDosen');

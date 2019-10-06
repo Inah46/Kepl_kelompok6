@@ -37,6 +37,11 @@ class DosenController extends Controller
         }
     }
 
+    public function logout(Request $request){
+      $request->session()->forget('nip');
+      return redirect()->route('loginDosen');
+    }
+
     public function dashboard(Request $request){
         $mhs   = Mahasiswa::count();
         $nip   = $request->session()->get('nip');
